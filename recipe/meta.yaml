@@ -158,6 +158,7 @@ outputs:
         - re2
         - openssl
         - pthread-stubs                               # [linux]
+        - zlib
       run:
         - python
         - setuptools
