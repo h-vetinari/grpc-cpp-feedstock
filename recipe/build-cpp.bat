@@ -24,5 +24,5 @@ cmake ..  ^
       -DgRPC_ZLIB_PROVIDER="package"
 if %ERRORLEVEL% neq 0 exit 1
 
-cmake --build . --config Release --target install
+ninja -j%CPU_COUNT% -k 0
 if %ERRORLEVEL% neq 0 exit 1
