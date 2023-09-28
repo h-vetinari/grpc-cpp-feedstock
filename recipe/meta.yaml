@@ -44,6 +44,8 @@ source:
 
 build:
   number: 0
+  # debug
+  skip: true  # [not ((linux or osx) and x86_64)]
 
 outputs:
   - name: libgrpc
